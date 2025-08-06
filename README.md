@@ -1,4 +1,4 @@
-# Your Name Here - Terminal Portfolio Template
+#Terminal Portfolio Template
 
 [![Vanilla HTML | 13KB | 100/100](https://img.shields.io/badge/vanilla-13KB-green?style=flat-square&logo=html5)](https://cod-e-codes.github.io/lilweb-template/)
 [![Lighthouse](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen?style=flat-square&logo=googlechrome)](https://cod-e-codes.github.io/lilweb-template/)
