@@ -1,9 +1,11 @@
 # Your Name Here - Terminal Portfolio Template
 
-[![Vanilla HTML | 13KB | 100/100](https://img.shields.io/badge/vanilla-13KB-green?style=flat-square&logo=html5)](https://your-website-url.com/)
-[![Lighthouse](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen?style=flat-square&logo=googlechrome)](https://your-website-url.com/)
+[![Vanilla HTML | 13KB | 100/100](https://img.shields.io/badge/vanilla-13KB-green?style=flat-square&logo=html5)](https://cod-e-codes.github.io/lilweb-template/)
+[![Lighthouse](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen?style=flat-square&logo=googlechrome)](https://cod-e-codes.github.io/lilweb-template/)
 
 A minimal terminal-inspired personal site template showcasing open-source projects and professional background.
+
+**Live Demo:** [https://cod-e-codes.github.io/lilweb-template/](https://cod-e-codes.github.io/lilweb-template/)
 
 ![Terminal Portfolio Screenshot](screenshot.png)
 
