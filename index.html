@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Name Here - Terminal Developer &amp; Open Source Contributor building tools in Go, Rust, and Python">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="dns-prefetch" href="//api.github.com">
+    <link rel="preconnect" href="https://api.github.com" crossorigin>
+    <title>Your Name Here - Terminal Developer</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Your Name Here",
+        "jobTitle": "Terminal Developer",
+        "description": "Terminal Developer &amp; Open Source Contributor building tools in Go, Rust, and Python",
+        "url": "https://github.com/Your GitHub Username",
+        "sameAs": [
+            "https://github.com/Your GitHub Username",
+            "https://www.linkedin.com/in/Your LinkedIn Username"
+        ],
+        "knowsAbout": ["Go", "Rust", "Python", "Terminal Development", "Open Source"],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Open Source Community"
+        }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .terminal {
+            background: #000;
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .prompt {
+            color: #00ff00;
+            font-weight: bold;
+        }
+        
+        .command {
+            color: #ffffff;
+        }
+        
+        .output {
+            color: #dddddd;
+            margin: 10px 0;
+        }
+        
+        .section {
+            margin: 30px 0;
+            min-height: 120px;
+        }
+        
+        .section-title {
+            color: #00ff00;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+        
+        .project {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 3px;
+            padding: 15px;
+            margin: 10px 0;
+            min-height: 100px;
+        }
+        
+        .project-title {
+            color: #00ff00;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .project-desc {
+            color: #cccccc;
+            margin-bottom: 10px;
+        }
+        
+        .project-meta {
+            color: #999;
+            font-size: 12px;
+        }
+        
+        .project-meta span {
+            margin-right: 15px;
+        }
+        
+        .link {
+            color: #00ff00;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        
+        .link:hover {
+            text-decoration: none;
+        }
+        
+        .loading {
+            color: #888;
+            font-style: italic;
+        }
+        
+        .error {
+            color: #ff4444;
+        }
+        
+        .cursor {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                font-size: 12px;
+            }
+            
+            .terminal {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="terminal">
+        <section class="section">
+            <div class="prompt">$</div>
+            <div class="command">whoami</div>
+            <div class="output">
+                Your Name Here<br>
+                Terminal Developer &amp; Open Source Contributor<br>
+                Building tools in Go, Rust, and Python
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="prompt">$</div>
+            <div class="command">ls ~/projects/</div>
+            <div class="output">
+                <h2 class="section-title">Pinned Projects</h2>
+                <div id="projects-container" style="min-height: 400px;">
+                    <div class="loading">Loading project data...</div>
+                    <noscript>
+                        <div class="error">Enable JavaScript to see live GitHub data.</div>
+                    </noscript>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="prompt">$</div>
+            <div class="command">cat ~/.profile</div>
+            <div class="output">
+                <div class="section-title">About</div>
+                <p>I build terminal-native tools and applications that enhance developer productivity. My focus is on creating lightweight, efficient software that respects the Unix philosophy.</p>
+                <p>When I'm not coding, you'll find me contributing to open source projects and sharing knowledge with the developer community.</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="prompt">$</div>
+            <div class="command">cat ~/.contacts</div>
+            <div class="output">
+                <div class="section-title">Contact</div>
+                <p>GitHub: <a href="https://github.com/Your GitHub Username" class="link" target="_blank" rel="noopener noreferrer">github.com/Your GitHub Username</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/Your LinkedIn Username" class="link" target="_blank" rel="noopener noreferrer">linkedin.com/in/Your LinkedIn Username</a></p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="prompt">$</div>
+            <div class="command">echo "Ready for collaboration"</div>
+            <div class="output">
+                <div class="section-title">Contributing &amp; Sponsorship</div>
+                <p>I welcome contributions to all my open source projects. Feel free to open issues, submit pull requests, or reach out for collaboration opportunities.</p>
+                <p>If you find my work valuable, consider sponsoring me on GitHub to support continued development.</p>
+            </div>
+        </section>
+        
+        <footer class="section">
+            <div class="prompt">$</div>
+            <div class="cursor">█</div>
+        </footer>
+    </main>
+
+    <script>
+        // Project configurations with fallback descriptions
+        const PROJECTS = [
+            {
+                name: 'project-one',
+                owner: 'Your GitHub Username',
+                fallbackDesc: 'A terminal-based application showcasing modern CLI development practices with Go and Bubble Tea.'
+            },
+            {
+                name: 'project-two',
+                owner: 'Your GitHub Username',
+                fallbackDesc: 'A collection of useful utilities and tools for developers working in terminal environments.'
+            },
+            {
+                name: 'project-three',
+                owner: 'Your GitHub Username',
+                fallbackDesc: 'A fast terminal-based file inspector with live preview, fuzzy search, and multi-language support.'
+            },
+            {
+                name: 'project-four',
+                owner: 'Your GitHub Username',
+                fallbackDesc: 'A developer tool that helps manage and organize your development workflow.'
+            },
+            {
+                name: 'project-five',
+                owner: 'Your GitHub Username',
+                fallbackDesc: 'A terminal application that demonstrates advanced CLI features and user experience.'
+            }
+        ];
+
+        // Cache management
+        const CACHE_KEY = 'github_projects_cache';
+        const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+
+        function getCachedData() {
+            try {
+                const cached = localStorage.getItem(CACHE_KEY);
+                if (!cached) return null;
+                
+                const data = JSON.parse(cached);
+                if (Date.now() - data.timestamp > CACHE_TTL) {
+                    localStorage.removeItem(CACHE_KEY);
+                    return null;
+                }
+                
+                return data.projects;
+            } catch (e) {
+                return null;
+            }
+        }
+
+        function setCachedData(projects) {
+            try {
+                const data = {
+                    projects: projects,
+                    timestamp: Date.now()
+                };
+                localStorage.setItem(CACHE_KEY, JSON.stringify(data));
+            } catch (e) {
+                console.warn('Failed to cache data:', e);
+            }
+        }
+
+        async function fetchProjectData(project) {
+            try {
+                const response = await fetch(`https://api.github.com/repos/${project.owner}/${project.name}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                return await response.json();
+            } catch (error) {
+                console.warn(`Failed to fetch ${project.name}:`, error);
+                return null;
+            }
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric' 
+            });
+        }
+
+        function renderProject(project, githubData = null) {
+            const desc = githubData?.description || project.fallbackDesc;
+            const stars = githubData?.stargazers_count || 0;
+            const forks = githubData?.forks_count || 0;
+            const updated = githubData?.updated_at ? formatDate(githubData.updated_at) : 'Unknown';
+            
+            return `
+                <article class="project">
+                    <header class="project-title">${project.name}</header>
+                    <div class="project-desc">${desc}</div>
+                    <footer class="project-meta">
+                        <span>⭐ ${stars}</span>
+                        <span>🍴 ${forks}</span>
+                        <span>📅 ${updated}</span>
+                        <span><a href="https://github.com/${project.owner}/${project.name}" class="link" target="_blank" rel="noopener noreferrer">View on GitHub</a></span>
+                    </footer>
+                </article>
+            `;
+        }
+
+        async function loadProjects() {
+            const container = document.getElementById('projects-container');
+            
+            // Check cache first
+            const cachedProjects = getCachedData();
+            if (cachedProjects) {
+                container.innerHTML = cachedProjects.map(project => 
+                    renderProject(project.project, project.githubData)
+                ).join('');
+                return;
+            }
+
+            // Fetch fresh data
+            container.innerHTML = '<div class="loading">Fetching project data from GitHub...</div>';
+            
+            const projectPromises = PROJECTS.map(async (project) => {
+                const githubData = await fetchProjectData(project);
+                return {
+                    project: project,
+                    githubData: githubData
+                };
+            });
+
+            try {
+                const results = await Promise.all(projectPromises);
+                const validResults = results.filter(result => result.githubData !== null);
+                
+                if (validResults.length > 0) {
+                    setCachedData(validResults);
+                }
+                
+                container.innerHTML = PROJECTS.map(project => {
+                    const result = results.find(r => r.project.name === project.name);
+                    return renderProject(project, result?.githubData);
+                }).join('');
+                
+            } catch (error) {
+                console.error('Failed to load projects:', error);
+                container.innerHTML = `
+                    <div class="error">Failed to load project data. Showing fallback information.</div>
+                    ${PROJECTS.map(project => renderProject(project)).join('')}
+                `;
+            }
+        }
+
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', loadProjects);
+    </script>
+
+    <!-- Optional performance badge -->
+    <div style="
+        position: fixed;
+        bottom: 8px;
+        right: 8px;
+        font-family: monospace;
+        background: rgba(17, 17, 17, 0.85);
+        color: #0f0;
+        padding: 4px 6px;
+        font-size: 0.75rem;
+        line-height: 1;
+        z-index: 9999;
+        border-radius: 4px;
+        pointer-events: none;
+    ">
+        13KB | 100/100 | Vanilla
+    </div>
+</body>
+</html>
